@@ -57,6 +57,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: RussianWoodpecker/travis-ci-test
-#    branch: master
+    branch: master
     tags: true
-#    condition: $TRAVIS_TAG =~ ^release-.*$
+    condition: $TRAVIS_TAG =~ ^release-.*$
