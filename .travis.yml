@@ -39,11 +39,11 @@ before_install:
 script:
 - "./gradlew clean :app:generateReleaseSources :app:assembleRelease connectedCheck -PdisablePreDex --stacktrace"
 before_deploy:
-- cd app/release
+- cd app/build/outputs/apk/release
 - jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ${TRAVIS_BUILD_DIR}/travis-test-keystore.jks
-  -storepass $storepass -keypass $keypass app-release.apk key0
-- jarsigner -verify app-release.apk
-- "${ANDROID_HOME}build-tools/${ANDROID_BUILD_TOOLS}/zipalign -v -f 4 app-release.apk
+  -storepass $storepass -keypass $keypass app-release-unsigned.apk key0
+- jarsigner -verify app-release-unsigned.apk
+- "${ANDROID_HOME}build-tools/${ANDROID_BUILD_TOOLS}/zipalign -v -f 4 app-release-unsigned.apk
   travis-test-signed.apk"
 - cd -
 deploy:
