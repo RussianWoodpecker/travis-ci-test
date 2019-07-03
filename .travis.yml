@@ -53,7 +53,7 @@ deploy:
     +yyE3zadowW4eY+3c20WkxEm6A2Vlcf9H2ybUuAf2L2nLZxE81R9NRRRRngaRK++Nn5c6OsqVrdG1lbueJrmTlUZskORm5vSOOfow3t2K3IAherLZEgMjqVA89FVZq3xRLTdFSRa3vUQnd7p2C8u5aKKUpHMgBGCegzoWp8vdE84NGUi7zwrFYnweD
     ZpC0HrBM6npq2/fbj/J+yxpDlf1cA5jTTGvYo0Sb3vVUpcCa9Lo/+1tQ9QCE8pg6aH71S3W+15UeXMIy15e8KkCXkkto2Ca9bgGYcFN6BJGmrP/mdJ7WjDQP4Y6moTNknPmK8OfEHhNKUFjJHwHHh8VblXOcCefKGNRx3wNKwU+0df1RxW2Tgxl03G
     g+Big3PDaRyKyoA0O9qNsUveuVwZ3kmwcbgLoFdU3sOi0Z1xyOOh4w/BlmKN0sdBdJf2B+0GaZDZ5b0aoEyO7TpPG+C98+jdg/NeLXhw18ldTsKcVxH+RRO7fFDAfQZiAP3kty5U="
-  file: app/build/outputs/apk/release/app-release.apk
+  file: app/build/outputs/apk/release/travis-test-signed.apk
   skip_cleanup: true
   on:
     repo: RussianWoodpecker/travis-ci-test
